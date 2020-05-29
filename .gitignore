@@ -2,3 +2,4 @@ packer_cache/
 output/*.box
 output-virtualbox-iso
 iso/*.iso
+iso/*.part

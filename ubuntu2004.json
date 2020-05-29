@@ -1,15 +1,15 @@
 {
     "variables": {
-        "hostname": "ubuntu",
+        "hostname": "ubuntu2004",
         "domain": "local",
         "ssh_user": "vagrant",
         "ssh_pass": "vagrant",
-        "iso_md5_hash": "cb7cd5a0c94899a04a536441c8b6d2bf",
+        "iso_md5_hash": "9d2b54506f8f9fdad6b72e45aff0f0de",
         "vm_cpus": "2",
         "vm_disk": "40000",
         "vm_memory": "2049",
         "vm_vmname": "ubuntu2004-vagrant-tpl",
-        "ubuntu_version": "18.04-2.{{timestamp}}"
+        "ubuntu_version": "20.04.{{timestamp}}"
     },
     "builders": [
         {
@@ -17,8 +17,8 @@
             "guest_os_type": "Ubuntu_64",
             "vm_name": "{{user `vm_vmname`}}",
             "iso_urls": [
-                "iso/ubuntu-18.04.3-server-amd64.iso",
-                "http://cdimage.ubuntu.com/ubuntu/releases/bionic/release/ubuntu-18.04.3-server-amd64.iso"
+                "iso/ubuntu-20.04-legacy-server-amd64.iso",
+                "http://cdimage.ubuntu.com/ubuntu-legacy-server/releases/20.04/release/ubuntu-20.04-legacy-server-amd64.iso"
             ],
             "iso_checksum": "{{user `iso_md5_hash`}}",
             "iso_checksum_type": "md5",
