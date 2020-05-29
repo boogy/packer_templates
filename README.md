@@ -1,3 +1,3 @@
 # packer_templates
-Templates for packer and vagrant
+Templates for packer generating vagrant boxes
 
