@@ -21,7 +21,6 @@
                 "http://cdimage.ubuntu.com/ubuntu-legacy-server/releases/20.04/release/ubuntu-20.04-legacy-server-amd64.iso"
             ],
             "iso_checksum": "{{user `iso_md5_hash`}}",
-            "iso_checksum_type": "md5",
             "disk_size": "{{user `vm_disk`}}",
             "vboxmanage": [
                 [
